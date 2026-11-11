@@ -1,0 +1,12 @@
+# Build output: release zips are attached to GitHub releases, not committed
+dist/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor clutter
+desktop.ini
+Thumbs.db
+.DS_Store

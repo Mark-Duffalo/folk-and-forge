@@ -15,7 +15,7 @@ from PIL import Image
 import glob
 import race_teams
 
-JAR = sys.argv[1] if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
+JAR = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
 RAND = "server_resourcepack/assets/minecraft/optifine/random/entity/villager"
 HDR = "# Matches the villager's scoreboard team (set by the races datapack). No names needed.\n"
 PROFESSIONS = ["armorer", "butcher", "cartographer", "cleric", "farmer", "fisherman", "fletcher",
@@ -331,6 +331,7 @@ def add_rule(path, num, team):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
     jar = zipfile.ZipFile(JAR)
     for prof in PROFESSIONS:
         img = copper_overlay(prof, jar)

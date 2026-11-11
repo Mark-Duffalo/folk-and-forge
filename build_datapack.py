@@ -1,5 +1,7 @@
 import json, os, shutil, zipfile
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
+
 ROOT = "server_datapack"
 NS = "races"
 
@@ -255,7 +257,8 @@ Ops: `... run function races:copper/set_<copper|exposed|weathered|oxidized>`.
 Only hobbits have custom trades so far. Recipes for non-hobbit races are placeholders.
 """)
 
-with zipfile.ZipFile("races_datapack.zip", "w", zipfile.ZIP_DEFLATED) as z:
+os.makedirs("dist", exist_ok=True)
+with zipfile.ZipFile("dist/races_datapack.zip", "w", zipfile.ZIP_DEFLATED) as z:
     for d, _, files in os.walk(ROOT):
         for f in files:
             p = os.path.join(d, f)

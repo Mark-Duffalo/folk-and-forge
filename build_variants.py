@@ -19,7 +19,7 @@ import colorsys, glob, io, itertools, os, sys, zipfile
 from PIL import Image
 import race_teams
 
-JAR = sys.argv[1] if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
+JAR = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
 A = "server_resourcepack/assets/minecraft"
 TEX, RAND = f"{A}/textures/entity/villager", f"{A}/optifine/random/entity/villager"
 HDR = "# Matches the villager's scoreboard team (set by the races datapack). No names needed.\n"
@@ -223,6 +223,7 @@ def clear_copper_block(n):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
     jar = zipfile.ZipFile(JAR)
     for n in (4, 5):
         clear_copper_block(n)

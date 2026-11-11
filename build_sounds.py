@@ -79,7 +79,8 @@ def check_files(version_json):
 
 
 def main():
-    version_json = sys.argv[1] if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.json")
+    version_json = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.json")
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
     missing = check_files(version_json)
     if missing:
         sys.exit(f"these sounds do not exist in this game version: {missing}")

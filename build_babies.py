@@ -25,7 +25,7 @@ def all_stages(team):
     """Model and overlay rules match a copper look in every weathering stage."""
     return race_teams.copper_teams(team) if team in race_teams.COPPER_LOOKS else team
 
-JAR = sys.argv[1] if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
+JAR = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
 A = "server_resourcepack/assets/minecraft"
 CEM, RAND = f"{A}/optifine/cem", f"{A}/optifine/random/entity/villager"
 HDR = bv.HDR
@@ -278,6 +278,7 @@ def acc_horn_rings(img, horn_uvs):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
     jar = zipfile.ZipFile(JAR)
     vanilla_png = Image.open(io.BytesIO(jar.read("assets/minecraft/textures/entity/villager/villager_baby.png"))).convert("RGBA")
     hobbit_hair = lambda x, y, p: tuple(p[:3]) in set(HOBBIT_PAL)

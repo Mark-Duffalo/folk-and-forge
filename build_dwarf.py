@@ -20,7 +20,7 @@ from PIL import Image
 from normalize_jem import normalize
 
 NUM, TEAM = "8", "race_dwarf"
-JAR = sys.argv[1] if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
+JAR = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.expandvars(r"%APPDATA%\.minecraft\versions\26.3\26.3.jar")
 A = "server_resourcepack/assets/minecraft"
 CEM, RAND, TEX = f"{A}/optifine/cem", f"{A}/optifine/random/entity/villager", f"{A}/textures/entity/villager"
 HDR = "# Matches the villager's scoreboard team (set by the races datapack). No names needed.\n"
@@ -174,6 +174,7 @@ def add_rule(path, key, value):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
     jar = zipfile.ZipFile(JAR)
     vanilla = lambda rel: Image.open(io.BytesIO(jar.read(f"assets/minecraft/textures/entity/villager/{rel}"))).convert("RGBA")
 

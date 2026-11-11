@@ -98,6 +98,7 @@ def put_json(path, data):
 
 
 if __name__ == "__main__":
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to the repo
     for race in PALETTES:
         png = f"{RP}/textures/item/contract/{race}.png"
         os.makedirs(os.path.dirname(png), exist_ok=True)

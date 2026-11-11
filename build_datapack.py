@@ -32,7 +32,7 @@ def w(path, content):
 
 # ---- pack.mcmeta ---------------------------------------------------------
 # 26.3 data pack format per community docs; verify against your server log.
-w("pack.mcmeta", {"pack": {"description": "Custom villager races: contracts, teams, gated trades",
+w("pack.mcmeta", {"pack": {"description": "Folk & Forge: folks (fantasy races), contracts, copper weathering",
                            "min_format": 121, "max_format": 121}})
 
 # ---- load: create one scoreboard team per race ---------------------------
@@ -229,7 +229,7 @@ for (prof, lvl), values in pools.items():
 rows = "\n".join(f"| {n} | `race_{i}`" + (" (random `race_copper_legs` / `race_copper_wheel`)" if i == "copper" else "") +
                  f" | `/function races:give/{i}_contract` | {' + '.join(g)} |"
                  for i, n, g in RACES)
-w("README.md", f"""# Races datapack
+w("README.md", f"""# Folk & Forge datapack: Folks (fantasy races)
 
 Each race = a scoreboard team `race_<id>` (read by ETF/EMF in the resource pack)
 plus a tag `race_<id>` (read by datapack trade gating). Nothing is renamed.

@@ -5,8 +5,8 @@
     python make_release.py 1.2.0 --publish     # also create GitHub release v1.2.0 with both zips (needs `gh`)
 
 The zips keep the same file names in every release, so these links always point at the newest one:
-    https://github.com/Mark-Duffalo/fantasy-races/releases/latest/download/FantasyRaces-ResourcePack.zip
-    https://github.com/Mark-Duffalo/fantasy-races/releases/latest/download/FantasyRaces-Datapack.zip
+    https://github.com/Mark-Duffalo/folk-and-forge/releases/latest/download/FolkAndForge-ResourcePack.zip
+    https://github.com/Mark-Duffalo/folk-and-forge/releases/latest/download/FolkAndForge-Datapack.zip
 The resource pack's SHA-1 is printed for server.properties (resource-pack-sha1); update it with
 each release, or players keep a cached old pack.
 
@@ -17,7 +17,7 @@ ETF/EMF/ESF rule points at a file that exists. Editor/OS clutter (desktop.ini, B
 import datetime, glob, hashlib, json, os, re, subprocess, sys, zipfile
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-PACKS = {"FantasyRaces-ResourcePack.zip": "server_resourcepack", "FantasyRaces-Datapack.zip": "server_datapack"}
+PACKS = {"FolkAndForge-ResourcePack.zip": "server_resourcepack", "FolkAndForge-Datapack.zip": "server_datapack"}
 SKIP_NAMES = {"desktop.ini", "thumbs.db", ".ds_store"}
 SKIP_EXT = (".bbmodel", ".old", ".bak", ".psd", ".kra", ".xcf")
 
@@ -72,9 +72,9 @@ def main():
         print(f"dist/{name}: {n} files, {os.path.getsize(f'dist/{name}') // 1024} KB, sha1 {sha1}")
     if publish:
         tag = f"v{version}"
-        notes = (f"Fantasy Races {version}.\n\nResource pack: needs Entity Texture Features + Entity Model Features "
+        notes = (f"Folk & Forge {version}.\n\nResource pack: needs Entity Texture Features + Entity Model Features "
                  f"(and Entity Sound Features for race voices). Datapack: put in the world's datapacks folder and /reload.")
-        subprocess.run(["gh", "release", "create", tag, *[f"dist/{n}" for n in PACKS], "--title", f"Fantasy Races {version}",
+        subprocess.run(["gh", "release", "create", tag, *[f"dist/{n}" for n in PACKS], "--title", f"Folk & Forge {version}",
                         "--notes", notes], check=True)
         print(f"published {tag}")
     else:

@@ -1,4 +1,4 @@
-# Races datapack
+# Folk & Forge datapack: Folks (fantasy races)
 
 Each race = a scoreboard team `race_<id>` (read by ETF/EMF in the resource pack)
 plus a tag `race_<id>` (read by datapack trade gating). Nothing is renamed.

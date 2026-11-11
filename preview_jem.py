@@ -101,7 +101,8 @@ def model_faces(jem, head_rot=None):
     return faces
 
 
-def render(jem, layers, yaw=30, pitch=12, scale=14, size=(420, 560), head_rot=None):
+def render(jem, layers, yaw=30, pitch=12, scale=14, size=(420, 560), head_rot=None, shade=False):
+    """shade=True lights faces like the game does (tops brightest, sides darker) for nicer pictures."""
     view = mul(rot([-pitch, 0, 0]), rot([0, -yaw, 0]))
     img = Image.new("RGBA", size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
@@ -119,9 +120,15 @@ def render(jem, layers, yaw=30, pitch=12, scale=14, size=(420, 560), head_rot=No
         if nz <= 0:
             continue
         depth = a[2] + (b[2] - a[2]) / 2 + (c[2] - a[2]) / 2
-        drawn.append((depth, rect, a, b, c, ts))
+        light = 1.0
+        if shade:   # world-space outward normal -(U x V), light from above and slightly in front
+            n = [-(pu[1] * pv[2] - pu[2] * pv[1]), -(pu[2] * pv[0] - pu[0] * pv[2]), -(pu[0] * pv[1] - pu[1] * pv[0])]
+            ln = math.sqrt(sum(x * x for x in n)) or 1
+            L = (0.25, 0.85, -0.47)
+            light = 0.58 + 0.42 * max(0.0, sum(n[i] / ln * L[i] for i in range(3)))
+        drawn.append((depth, rect, a, b, c, ts, light))
     drawn.sort(key=lambda f: -f[0])
-    for _, (tu, tv, tw, th), a, b, c, ts in drawn:
+    for _, (tu, tv, tw, th), a, b, c, ts, light in drawn:
         if tw <= 0 or th <= 0:
             continue
         for layer in layers:
@@ -136,7 +143,7 @@ def render(jem, layers, yaw=30, pitch=12, scale=14, size=(420, 560), head_rot=No
                         fu, fv = di / tw, dj / th
                         pts.append((a[0] + (b[0] - a[0]) * fu + (c[0] - a[0]) * fv,
                                     a[1] + (b[1] - a[1]) * fu + (c[1] - a[1]) * fv))
-                    draw.polygon(pts, fill=px[:3] + (255,))
+                    draw.polygon(pts, fill=tuple(min(255, int(v * light)) for v in px[:3]) + (255,))
     return img
 
 

@@ -249,7 +249,7 @@ def baby_kobold(img, model, atlas):
 # ---- accessories (positions on the baby texture) -------------------------------------------
 def acc_freckles(img):
     px = img.load()
-    for p in [(8, 13), (9, 14), (13, 13), (12, 13)]:
+    for p in [(8, 13), (9, 13), (12, 13), (13, 13)]:          # cheeks only, clear of the mouth row (14)
         px[p] = tuple(max(0, c - 38) for c in px[p][:3]) + (255,)
     return img
 

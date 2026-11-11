@@ -112,7 +112,7 @@ def put(img, pts, color):
 def hobbit_freckles(img):
     px = img.load()
     dark = lambda p: tuple(clamp(c - 38) for c in px[p][:3])
-    for p in [(73, 15), (72, 16), (78, 15), (79, 16), (74, 16), (77, 16)]:
+    for p in [(73, 15), (72, 16), (78, 15), (79, 16)]:          # cheeks only, clear of the mouth (75-76, 16)
         px[p] = dark(p) + (255,)
     return img
 
@@ -158,10 +158,11 @@ def humanoid(skin_n, hair_mask, hairs, accessory, eyes=None):
         if hk in LIGHT_HAIR and sk in DARK_SKIN:
             continue
         def make(img, hc=hc, sc=sc, acc=acc):
-            if sc:
-                recolor(img, is_skin, sc)
+            # hair first: a darkened mouth on deep skin must never be mistaken for hair
             if hc:
                 recolor(img, hair_mask or green_eye, hc)
+            if sc:
+                recolor(img, is_skin, sc)
             return accessory(img) if acc else img
         out.append((f"{hk}/{sk}/{'acc' if acc else 'plain'}", make))
     return out

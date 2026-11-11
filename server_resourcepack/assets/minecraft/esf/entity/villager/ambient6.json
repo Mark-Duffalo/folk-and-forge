@@ -1,0 +1,49 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/axolotl/idle_air1",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/axolotl/idle_air2",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/axolotl/idle_air3",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/axolotl/idle_air4",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/axolotl/idle_air5",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/frog/idle1",
+			"pitch": 1.2,
+			"volume": 0.7
+		},
+		{
+			"name": "minecraft:mob/frog/idle2",
+			"pitch": 1.2,
+			"volume": 0.7
+		},
+		{
+			"name": "minecraft:mob/frog/idle3",
+			"pitch": 1.2,
+			"volume": 0.7
+		},
+		{
+			"name": "minecraft:mob/frog/idle4",
+			"pitch": 1.2,
+			"volume": 0.7
+		}
+	]
+}

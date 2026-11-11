@@ -1,0 +1,14 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/axolotl/death1",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/axolotl/death2",
+			"pitch": 1.0,
+			"volume": 1.0
+		}
+	]
+}

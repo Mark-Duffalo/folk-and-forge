@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:lily_of_the_valley",
+    "minecraft:glow_berries"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Elf Contract",
+      "minecraft:lore": [
+        "Right-click an unemployed villager",
+        "to make them a elf."
+      ],
+      "minecraft:custom_data": {
+        "race_contract": "elf"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "races:contract/elf"
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 128],
+	"texture": "textures/entity/villager/villager.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 24, -4, 8, 6, 8], "textureOffset": [2, 1]}
+			],
+			"submodels": [
+				{
+					"id": "lightning_rod",
+					"invertAxis": "xy",
+					"translate": [0, 20, 0],
+					"boxes": [
+						{"coordinates": [-2, 13, -2, 4, 4, 4], "textureOffset": [37, 0]},
+						{"coordinates": [-1, 10, -1, 2, 3, 2], "textureOffset": [56, 0]}
+					]
+				}
+			]
+		},
+		{
+			"part": "nose",
+			"id": "nose",
+			"invertAxis": "xy",
+			"translate": [0, -26, 0],
+			"boxes": [
+				{"coordinates": [-1, 23, -6, 2, 4, 2], "textureOffset": [37, 8]}
+			]
+		},
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 24, -4, 8, 13, 8], "textureOffset": [45, 68], "sizeAdd": 0.51}
+			]
+		},
+		{
+			"part": "headwear2",
+			"id": "headwear2",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"rotate": [90, 0, 0],
+			"boxes": [
+				{"coordinates": [-8, 16, -6, 16, 16, 1], "textureOffset": [51, 44]}
+			],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 12, -3, 8, 12, 6], "textureOffset": [0, 15]}
+			],
+			"submodels": [
+				{
+					"id": "handheld",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"boxes": [
+						{"coordinates": [-4, -10, -11, 8, 8, 8], "textureOffset": [45, 89]}
+					]
+				},
+				{
+					"id": "unicycle",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"submodels": [
+						{
+							"id": "wheel",
+							"invertAxis": "xy",
+							"translate": [0, -20, 0],
+							"boxes": [
+								{"coordinates": [-1, -4, -4, 2, 8, 8], "textureOffset": [77, 75]}
+							]
+						}
+					],
+					"boxes": [
+						{"coordinates": [-2, -22, -2, 4, 10, 4], "textureOffset": [69, 107]}
+					]
+				}
+			],
+			"animations": [
+				{ "wheel.rx": "limb_swing * 0.8" }
+			]
+		},
+		{
+			"part": "bodywear",
+			"id": "bodywear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 4, -3, 8, 20, 6], "textureOffset": [17, 68], "sizeAdd": 0.5}
+			]
+		},
+		{
+			"part": "arms",
+			"id": "arms",
+			"invertAxis": "xy",
+			"translate": [0, -21.05, 1.05],
+			"rotate": [43, 0, 0],
+			"boxes": [
+				{"coordinates": [-4, 15.05, -3.05, 8, 4, 4], "textureOffset": [45, 105]},
+				{"coordinates": [4, 15.05, -3.05, 4, 8, 4], "textureOffset": [34, 16]}
+			],
+			"submodels": [
+				{
+					"id": "mirrored",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-8, 15.05, -3.05, 4, 8, 4], "textureOffset": [34, 16]}
+					]
+				},
+				{
+					"id": "handheld2",
+					"invertAxis": "xy",
+					"translate": [0, 21.05, -1.05],
+					"boxes": [
+						{"coordinates": [5, -11, -12, 1, 8, 16], "textureOffset": [17, 44]}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-2, -12, 0],
+			"boxes": [
+				{"coordinates": [0, 0, -2, 4, 12, 4], "textureOffset": [50, 16]}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [2, -12, 0],
+			"boxes": [
+				{"coordinates": [-4, 0, -2, 4, 12, 4], "textureOffset": [50, 16]}
+			]
+		}
+	]
+}

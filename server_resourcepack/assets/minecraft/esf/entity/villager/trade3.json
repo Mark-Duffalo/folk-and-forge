@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/wandering_trader/haggle1",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/haggle2",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/haggle3",
+			"pitch": 1.1,
+			"volume": 1.0
+		}
+	]
+}

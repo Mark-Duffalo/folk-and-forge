@@ -1,0 +1,24 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/fox/hurt1",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/hurt2",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/hurt3",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/hurt4",
+			"pitch": 1.15,
+			"volume": 1.0
+		}
+	]
+}

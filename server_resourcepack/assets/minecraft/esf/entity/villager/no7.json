@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/fox/spit1",
+			"pitch": 1.2,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/spit2",
+			"pitch": 1.2,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/spit3",
+			"pitch": 1.2,
+			"volume": 1.0
+		}
+	]
+}

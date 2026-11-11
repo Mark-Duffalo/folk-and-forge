@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "use_contract": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:paper",
+          "predicates": {
+            "minecraft:custom_data": {
+              "race_contract": "hobbit"
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "races:contract/apply_hobbit"
+  }
+}

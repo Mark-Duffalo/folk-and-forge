@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "races:hobbit/fisher_salmon",
+    "races:hobbit/fisher_cooked_salmon"
+  ]
+}

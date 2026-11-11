@@ -1,0 +1,9 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/death",
+			"pitch": 1.0,
+			"volume": 1.0
+		}
+	]
+}

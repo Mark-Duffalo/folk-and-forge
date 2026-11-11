@@ -1,0 +1,24 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/fox/screech1",
+			"pitch": 1.2,
+			"volume": 0.6
+		},
+		{
+			"name": "minecraft:mob/fox/screech2",
+			"pitch": 1.2,
+			"volume": 0.6
+		},
+		{
+			"name": "minecraft:mob/fox/screech3",
+			"pitch": 1.2,
+			"volume": 0.6
+		},
+		{
+			"name": "minecraft:mob/fox/screech4",
+			"pitch": 1.2,
+			"volume": 0.6
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/villager/death",
+			"pitch": 0.75,
+			"volume": 1.0
+		}
+	]
+}

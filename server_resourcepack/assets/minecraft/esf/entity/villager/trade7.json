@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/fox/eat1",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/eat2",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/eat3",
+			"pitch": 1.15,
+			"volume": 1.0
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/coppergolem/item_no_drop",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin1",
+			"pitch": 1.0,
+			"volume": 0.6
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin2",
+			"pitch": 1.0,
+			"volume": 0.6
+		}
+	]
+}

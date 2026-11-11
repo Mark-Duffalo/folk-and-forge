@@ -1,0 +1,9 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/wandering_trader/death",
+			"pitch": 1.1,
+			"volume": 1.0
+		}
+	]
+}

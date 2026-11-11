@@ -1,0 +1,64 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/fox/idle1",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/idle2",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/idle3",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/idle4",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/idle5",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/idle6",
+			"pitch": 1.15,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/sniff1",
+			"pitch": 1.2,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/sniff2",
+			"pitch": 1.2,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/sniff3",
+			"pitch": 1.2,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/fox/sniff4",
+			"pitch": 1.2,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/silverfish/say1",
+			"pitch": 0.8,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/silverfish/say2",
+			"pitch": 0.8,
+			"volume": 0.5
+		}
+	]
+}

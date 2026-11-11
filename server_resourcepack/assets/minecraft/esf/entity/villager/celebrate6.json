@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/dolphin/jump1",
+			"pitch": 1.0,
+			"volume": 0.8
+		},
+		{
+			"name": "minecraft:mob/dolphin/jump2",
+			"pitch": 1.0,
+			"volume": 0.8
+		},
+		{
+			"name": "minecraft:mob/dolphin/jump3",
+			"pitch": 1.0,
+			"volume": 0.8
+		}
+	]
+}

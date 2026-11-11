@@ -1,0 +1,29 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/wandering_trader/idle1",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/idle2",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/idle3",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/idle4",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/idle5",
+			"pitch": 1.1,
+			"volume": 1.0
+		}
+	]
+}

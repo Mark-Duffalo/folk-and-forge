@@ -1,0 +1,23 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 3
+  },
+  "gives": {
+    "id": "minecraft:cake",
+    "count": 1
+  },
+  "max_uses": 8,
+  "xp": 15,
+  "merchant_predicate": {
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "minecraft:entity_tags": {
+        "all_of": [
+          "race_hobbit"
+        ]
+      }
+    }
+  }
+}

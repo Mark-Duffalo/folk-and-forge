@@ -1,0 +1,24 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/wandering_trader/hurt1",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/hurt2",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/hurt3",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/hurt4",
+			"pitch": 1.1,
+			"volume": 1.0
+		}
+	]
+}

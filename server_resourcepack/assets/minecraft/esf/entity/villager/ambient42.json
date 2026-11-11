@@ -1,0 +1,39 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin1",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin2",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin3",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin4",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin5",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin6",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/oxidized/spin7",
+			"pitch": 1.0,
+			"volume": 0.5
+		}
+	]
+}

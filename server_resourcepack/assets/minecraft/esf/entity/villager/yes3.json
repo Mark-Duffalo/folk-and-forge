@@ -1,0 +1,24 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/wandering_trader/yes1",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/yes2",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/yes3",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/yes4",
+			"pitch": 1.1,
+			"volume": 1.0
+		}
+	]
+}

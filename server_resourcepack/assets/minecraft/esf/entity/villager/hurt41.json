@@ -1,0 +1,24 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/coppergolem/weathered/hurt1",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/coppergolem/weathered/hurt2",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/coppergolem/weathered/hurt3",
+			"pitch": 1.0,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/coppergolem/weathered/hurt4",
+			"pitch": 1.0,
+			"volume": 1.0
+		}
+	]
+}

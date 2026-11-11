@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/villager/no1",
+			"pitch": 1.25,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/villager/no2",
+			"pitch": 1.25,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/villager/no3",
+			"pitch": 1.25,
+			"volume": 1.0
+		}
+	]
+}

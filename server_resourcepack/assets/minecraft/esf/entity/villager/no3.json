@@ -1,0 +1,29 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/wandering_trader/no1",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/no2",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/no3",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/no4",
+			"pitch": 1.1,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/wandering_trader/no5",
+			"pitch": 1.1,
+			"volume": 1.0
+		}
+	]
+}

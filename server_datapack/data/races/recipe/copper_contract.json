@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:copper_ingot",
+    "minecraft:redstone"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Copper Construct Contract",
+      "minecraft:lore": [
+        "Right-click an unemployed villager",
+        "to make them a copper construct."
+      ],
+      "minecraft:custom_data": {
+        "race_contract": "copper"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "races:contract/copper"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Runs as a copper construct: join the team for its look and weathering stage.
+execute if entity @s[tag=race_copper_legs] if score @s races.copper matches 0 run team join race_copper_legs @s
+execute if entity @s[tag=race_copper_legs] if score @s races.copper matches 1 run team join race_copper_legs_exposed @s
+execute if entity @s[tag=race_copper_legs] if score @s races.copper matches 2 run team join race_copper_legs_weathered @s
+execute if entity @s[tag=race_copper_legs] if score @s races.copper matches 3 run team join race_copper_legs_oxidized @s
+execute if entity @s[tag=race_copper_wheel] if score @s races.copper matches 0 run team join race_copper_wheel @s
+execute if entity @s[tag=race_copper_wheel] if score @s races.copper matches 1 run team join race_copper_wheel_exposed @s
+execute if entity @s[tag=race_copper_wheel] if score @s races.copper matches 2 run team join race_copper_wheel_weathered @s
+execute if entity @s[tag=race_copper_wheel] if score @s races.copper matches 3 run team join race_copper_wheel_oxidized @s

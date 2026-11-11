@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/villager/haggle1",
+			"pitch": 1.25,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/villager/haggle2",
+			"pitch": 1.25,
+			"volume": 1.0
+		},
+		{
+			"name": "minecraft:mob/villager/haggle3",
+			"pitch": 1.25,
+			"volume": 1.0
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:kelp",
+    "minecraft:cod"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Fishfolk Contract",
+      "minecraft:lore": [
+        "Right-click an unemployed villager",
+        "to make them a fishfolk."
+      ],
+      "minecraft:custom_data": {
+        "race_contract": "fishfolk"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "races:contract/fishfolk"
+    }
+  }
+}

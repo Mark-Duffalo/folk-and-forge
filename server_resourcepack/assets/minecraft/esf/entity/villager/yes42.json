@@ -1,0 +1,9 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/coppergolem/item_drop",
+			"pitch": 1.0,
+			"volume": 1.0
+		}
+	]
+}

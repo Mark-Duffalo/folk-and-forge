@@ -1,0 +1,39 @@
+{
+	"sounds": [
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin1",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin2",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin3",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin4",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin5",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin6",
+			"pitch": 1.0,
+			"volume": 0.5
+		},
+		{
+			"name": "minecraft:mob/coppergolem/regular/spin7",
+			"pitch": 1.0,
+			"volume": 0.5
+		}
+	]
+}

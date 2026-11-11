@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "races:hobbit/farmer_potatoes",
+    "races:hobbit/farmer_pie",
+    "races:hobbit/farmer_baked"
+  ]
+}
